@@ -23,7 +23,7 @@ eureka:
 zuul:
   routes:
     auth-service:
-        path: http/uaa/**
+        path: /uaa/**
         url: http://192.168.99.100:8083
         stripPrefix: false
         sensitiveHeaders:
