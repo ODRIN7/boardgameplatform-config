@@ -15,8 +15,7 @@ server:
           - application/json
           - application/javascript
 
-logging:
-  level: debug
+logging.level.org.springframework.security: DEBUG
 
 
 # EUREKA
