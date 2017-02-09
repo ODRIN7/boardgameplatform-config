@@ -43,11 +43,16 @@ spring:
 # ZULL
 zuul:
   routes:
-    auth-service:
-        path: /uaa/**
-        url: http://192.168.99.100:8083
-        stripPrefix: false
-        sensitiveHeaders:
+     gateway-auth-service:
+          sensitiveHeaders:
+          path: /uaa/**
+          stripPrefix: false
+          serviceId: gateway-service
+     gateway-service-api:
+          sensitiveHeaders:
+          path: /api/**
+          stripPrefix: false
+          serviceId: gateway-service
   add-proxy-headers: true
 
 # EUREKA

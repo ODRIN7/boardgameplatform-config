@@ -18,7 +18,7 @@ zuul:
         url: http://auth-service:8083
         stripPrefix: false
         sensitiveHeaders:
-    ui-service:
+    api-service:
         sensitiveHeaders:
         path: /api/**
         stripPrefix: true
