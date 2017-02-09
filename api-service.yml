@@ -15,12 +15,11 @@ server:
           - application/json
           - application/javascript
 
-          
 # JACKSON
 spring:
     jackson.serialization:
         write_dates_as_timestamps: false
-        
+
 security:
   basic:
     enabled: false
@@ -64,7 +63,7 @@ eureka:
 
 spring:
   profiles: standalone
-    data:
+  data:
     mongodb:
       host: 192.168.99.100
       username: odrin7
