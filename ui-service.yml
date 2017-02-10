@@ -74,7 +74,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-
 # ZULL
 zuul:
   routes:
@@ -83,7 +82,7 @@ zuul:
           path: /oauth/**
           url: http://192.168.99.100:8083
           stripPrefix: false
-     api-service
+     api-service:
           sensitiveHeaders:
           path: /api/**
           url: http://192.168.99.100:8085
