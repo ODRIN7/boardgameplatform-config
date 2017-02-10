@@ -16,11 +16,13 @@ zuul:
     auth-service:
       sensitiveHeaders:
       path: /oauth/**
+      url: http://auth-service:8083
       stripPrefix: false
 
     api-service:
       sensitiveHeaders:
       path: /api/**
+      url: http://api-service:8085
       stripPrefix: true
   add-proxy-headers: true
 #SECURITY

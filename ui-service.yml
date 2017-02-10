@@ -53,7 +53,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-service:8081/eureka/
-# ZULL
+# ZULL urit must make
 zuul:
   routes:
      gateway-service-oauth:
