@@ -25,6 +25,12 @@ security:
   basic:
     enabled: false
   oauth2:
+    client:
+        clientId: boardgame-service
+        clientSecret: boardgame-service
+        accessTokenUri: http://auth-service:8083/oauth/token
+        grant-type: client_credentials
+        scope: server
     sso:
       loginPath: /login
     resource:
