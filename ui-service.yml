@@ -53,7 +53,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-service:8081/eureka/
-# ZULL urit must make
+# ZULL
 zuul:
   routes:
      gateway-service-oauth:
@@ -81,16 +81,17 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 # ZULL
+# ZULL
 zuul:
   routes:
-     auth-service:
+     gateway-service-oauth:
           sensitiveHeaders:
           path: /oauth/**
-          url: http://192.168.99.100:8090/oauth
           stripPrefix: false
-     api-service:
+          serviceId: gateway-service
+     gateway-service-api:
           sensitiveHeaders:
           path: /api/**
-          url: http://192.168.99.100:8090/api/
           stripPrefix: false
+          serviceId: gateway-service
   add-proxy-headers: true
