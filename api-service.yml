@@ -23,13 +23,13 @@ spring:
 security:
   basic:
     enabled: false
-  client:
-        clientId: boardgame-service
-        clientSecret: boardgame-service
-        accessTokenUri: http://auth-service:8083/oauth/token
-        grant-type: client_credentials
-        scope: server
   oauth2:
+    client:
+      clientId: boardgame-service
+      clientSecret: boardgame-service
+      accessTokenUri: http://auth-service:8083/oauth/token
+      grant-type: client_credentials
+      scope: server
     resource:
       jwt:
         keyValue: |
