@@ -84,12 +84,12 @@ eureka:
 # ZULL
 zuul:
   routes:
-     gateway-service-oauth:
+     gateway-auth-service:
           sensitiveHeaders:
           path: /oauth/**
           stripPrefix: false
           serviceId: gateway-service
-     gateway-service-api:
+     gateway-api-service:
           sensitiveHeaders:
           path: /api/**
           stripPrefix: false
