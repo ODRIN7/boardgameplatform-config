@@ -57,7 +57,7 @@ spring:
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 27017
+      port: 27016
 
 # EUREKA
 eureka:

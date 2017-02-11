@@ -23,7 +23,7 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-    
+
 # LOGGING
 #logging.level.org.springframework.security: DEBUG
 ---
