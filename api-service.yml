@@ -53,11 +53,11 @@ spring:
   profiles: docker
   data:
     mongodb:
-      host: auth-mongodb
+      host: api-mongodb
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 26000
+      port: 27017
 
 # EUREKA
 eureka:
@@ -75,7 +75,7 @@ spring:
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 26000
+      port: 27017
 
 # EUREKA
 eureka:
