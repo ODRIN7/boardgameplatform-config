@@ -32,6 +32,11 @@ zuul:
           path: /api/**
           stripPrefix: false
           serviceId: gateway-service
+     gateway-service-store:
+          sensitiveHeaders:
+          path: /store/**
+          stripPrefix: false
+          serviceId: gateway-service
   add-proxy-headers: true
 
 #SECURITY

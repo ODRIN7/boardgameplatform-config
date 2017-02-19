@@ -22,6 +22,10 @@ zuul:
       sensitiveHeaders:
       path: /api/**
       stripPrefix: true
+    store-service:
+      sensitiveHeaders:
+      path: /store/**
+      stripPrefix: true
 #SECURITY
 security:
   basic:
