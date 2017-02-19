@@ -28,8 +28,8 @@ security:
     enabled: false
   oauth2:
     client:
-        clientId: boardgame-service
-        clientSecret: boardgame-service
+        clientId: store-service
+        clientSecret: store-service
         accessTokenUri: http://auth-service:8083/oauth/token
         grant-type: client_credentials
         scope: server
