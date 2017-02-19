@@ -37,6 +37,12 @@ security:
         accessTokenUri: http://auth-service:8083/oauth/token
         grant-type: client_credentials
         scope: server
+    client:
+        clientId: store-service
+        clientSecret: store-service
+        accessTokenUri: http://auth-service:8083/oauth/token
+        grant-type: client_credentials
+        scope: server
     sso:
       loginPath: /login
     resource:
