@@ -30,7 +30,7 @@ security:
       accessTokenUri: http://auth-service:8083/oauth/token
       grant-type: client_credentials
       scope: server
-cd    resource:
+    resource:
       jwt:
         keyValue: |
               -----BEGIN PUBLIC KEY-----
