@@ -49,11 +49,11 @@ spring:
   profiles: standalone
   data:
     mongodb:
-      host: 192.168.99.100
+      host: auth-mongodb
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 25000
+      port: 24000
 
 # EUREKA
 eureka:
