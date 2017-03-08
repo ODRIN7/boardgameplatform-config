@@ -57,7 +57,7 @@ spring:
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 27017
+      port: 26000
 
 # EUREKA
 eureka:
@@ -71,11 +71,11 @@ spring:
   profiles: standalone
   data:
     mongodb:
-      host: 192.168.99.100
+      host: message-mongodb
       username: odrin7
       password: odrin7
       database: boardGameArena
-      port: 27017
+      port: 26000
 
 # EUREKA
 eureka:
