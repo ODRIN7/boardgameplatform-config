@@ -29,9 +29,9 @@ zuul:
       sensitiveHeaders:
       path: /message/**
       stripPrefix: true
-    statistics-service:
+    admin-service:
       sensitiveHeaders:
-      path: /statistics/**
+      path: /admin/**
       stripPrefix: true
     notification-service:
       sensitiveHeaders:
