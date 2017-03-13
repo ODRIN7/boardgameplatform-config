@@ -1,6 +1,6 @@
 # EMBEDDED SERVER CONFIGURATION
 server:
-    port: ${port:8089}
+    port: ${port:8095}
     context-path: /
     use-forward-headers: true
     error.whitelabel.enabled: false
@@ -14,7 +14,9 @@ server:
           - text/xml
           - application/json
           - application/javascript
-
+turbine:
+  stream:
+    port: 8096
 # JACKSON
 spring:
     jackson.serialization:
