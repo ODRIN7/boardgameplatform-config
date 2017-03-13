@@ -20,7 +20,7 @@ zuul:
     boardgame-service:
       sensitiveHeaders:
       path: /api/**
-      stripPrefix: false
+      stripPrefix: true
     store-service:
       sensitiveHeaders:
       path: /store/**
