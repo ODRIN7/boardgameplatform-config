@@ -2,3 +2,17 @@ spring:
   rabbitmq:
     host: rabbitmq
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://registry:8081/eureka/
