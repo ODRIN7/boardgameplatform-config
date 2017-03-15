@@ -27,7 +27,7 @@ security:
     client:
       clientId: api-service
       clientSecret: api-service
-      accessTokenUri: http://auth-service:8083/oauth/token
+      accessTokenUri: http://auth-service:8090/oauth/token
       grant-type: client_credentials
       scope: server
     resource:
