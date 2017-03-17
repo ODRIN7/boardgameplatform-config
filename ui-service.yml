@@ -45,11 +45,11 @@ security:
     enabled: false
   oauth2:
     client:
-        clientId: ui-service
-        clientSecret: ui-service
-        accessTokenUri: http://auth-service:8083/oauth/token
-        grant-type: client_credentials
-        scope: openid
+      clientId: ui-service
+      clientSecret: ui-service
+      accessTokenUri: http://auth-service:8083/oauth/token
+      grant-type: client_credentials
+      scope: openid
     sso:
       loginPath: /login
     resource:
