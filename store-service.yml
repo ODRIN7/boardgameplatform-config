@@ -25,11 +25,11 @@ security:
     enabled: false
   oauth2:
     client:
-      clientId: store-service
-      clientSecret: store-service
-      accessTokenUri: http://auth-service:8083/oauth/token
-      grant-type: client_credentials
-      scope: server
+        clientId: ui-service
+        clientSecret: ui-service
+        accessTokenUri: http://auth-service:8083/oauth/token
+        grant-type: client_credentials
+        scope: openid
     resource:
       jwt:
         keyValue: |
