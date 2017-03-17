@@ -14,7 +14,11 @@ server:
           - text/xml
           - application/json
           - application/javascript
-
+    ssl:
+      key-store: keystore.p12
+      key-store-password: mypassword
+      keyStoreType: PKCS12
+      keyAlias: tomcat
 # JACKSON
 spring:
     jackson.serialization:
