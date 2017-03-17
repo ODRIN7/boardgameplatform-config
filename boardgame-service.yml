@@ -14,11 +14,7 @@ server:
           - text/xml
           - application/json
           - application/javascript
-    ssl:
-      key-store:  keystore.p12
-      key-store-password: odrin7
-      keyStoreType: PKCS12
-      keyAlias: tomcat
+
 # JACKSON
 spring:
     jackson.serialization:
