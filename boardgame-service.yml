@@ -16,7 +16,7 @@ server:
           - application/javascript
     ssl:
       key-store: keystore.p12
-      key-store-password: mypassword
+      key-store-password: odrin7
       keyStoreType: PKCS12
       keyAlias: tomcat
 # JACKSON
