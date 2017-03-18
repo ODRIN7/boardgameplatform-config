@@ -21,9 +21,3 @@ security:
   oauth2:
     resource:
       user-info-uri: http://auth-service:8083/users/current
-server:
-    ssl:
-      key-store:  classpath:keystore.p12
-      key-store-password: odrin7
-      keyStoreType: PKCS12
-      keyAlias: tomcat

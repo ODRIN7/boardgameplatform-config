@@ -45,7 +45,7 @@ security:
     client:
       clientId: ui-service
       clientSecret: ui-service
-      accessTokenUri: https://auth-service:8083/oauth/token
+      accessTokenUri: http://auth-service:8083/oauth/token
       grant-type: client_credentials
       scope: openid
     sso:
@@ -71,7 +71,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://discovery-service:8081/eureka/
+      defaultZone: http://discovery-service:8081/eureka/
 
 ---
 
@@ -85,4 +85,4 @@ eureka:
     port: 8081
   client:
     serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/

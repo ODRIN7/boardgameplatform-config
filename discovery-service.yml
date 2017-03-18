@@ -29,7 +29,7 @@ eureka:
     non-secure-port-enabled: false
   client:
     serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 ---
 
@@ -43,4 +43,4 @@ eureka:
     port: 8081
   client:
     serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/

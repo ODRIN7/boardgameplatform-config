@@ -63,12 +63,9 @@ eureka:
   instance:
     hostname: discovery-service
     port: 8081
-    status-page-url: https://${eureka.instance.hostname}:${eureka.instance.port}/info/
-    health-check-url-path: https://${eureka.instance.hostname}:${eureka.instance.port}/health/
-    home-page-url-path: https://${eureka.instance.hostname}:${eureka.instance.port}/
   client:
     serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 ---
 
