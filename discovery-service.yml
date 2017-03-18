@@ -10,7 +10,9 @@ eureka:
     fetchRegistry: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
-    
+  instance:
+
+
 # LOGGING
 #logging.level.org.springframework.security: DEBUG
 ---
@@ -20,9 +22,14 @@ spring:
 
 # EUREKA
 eureka:
+  instance:
+    hostname: discovery-service
+    port: 8081
+    secure-port-enabled: true
+    non-secure-port-enabled: false
   client:
     serviceUrl:
-      defaultZone: http://discovery-service:8081/eureka/
+      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 ---
 
@@ -36,4 +43,4 @@ eureka:
     port: 8081
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
