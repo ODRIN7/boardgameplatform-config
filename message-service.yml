@@ -67,6 +67,7 @@ eureka:
 
 ---
 
+
 spring:
   profiles: standalone
   data:

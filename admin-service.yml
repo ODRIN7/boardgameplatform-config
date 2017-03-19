@@ -68,6 +68,7 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-service:8081/eureka/
 
+
 ---
 
 spring:

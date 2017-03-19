@@ -17,6 +17,7 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-service:8081/eureka/
 
+
 security:
   oauth2:
     resource:

@@ -33,6 +33,7 @@ eureka:
 
 ---
 
+
 spring:
   profiles: standalone
 
