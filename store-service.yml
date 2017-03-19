@@ -15,6 +15,7 @@ server:
           - application/json
           - application/javascript
 
+
 # JACKSON
 spring:
     jackson.serialization:
