@@ -81,6 +81,7 @@ zuul:
      auth-service:
           url: http://auth-service:8083
 
+
 ---
 spring:
   profiles: standalone
