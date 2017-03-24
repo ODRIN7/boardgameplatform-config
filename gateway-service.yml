@@ -33,9 +33,9 @@ zuul:
       sensitiveHeaders:
       path: /admin/**
       stripPrefix: true
-    notification-service:
+    ui-service:
       sensitiveHeaders:
-      path: /notification/**
+      path: /**
       stripPrefix: true
 #SECURITY
 security:
