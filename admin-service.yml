@@ -53,13 +53,6 @@ eureka:
 
 spring:
   profiles: docker
-  data:
-    mongodb:
-      host: admin-mongodb
-      username: odrin7
-      password: odrin7
-      database: boardGameArena
-      port: 27017
 
 # EUREKA
 eureka:
@@ -74,13 +67,6 @@ eureka:
 
 spring:
   profiles: standalone
-  data:
-    mongodb:
-      host: 192.168.99.100
-      username: odrin7
-      password: odrin7
-      database: boardGameArena
-      port: 27017
 
 # EUREKA
 eureka:
